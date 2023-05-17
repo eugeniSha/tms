@@ -1,0 +1,6 @@
+x= input ("print first number  ")
+x= int (x)
+y= input ("print second number  ")
+y= int (y)
+result= (abs(x)-abs(y))/(1+abs(x*y))
+print(result)

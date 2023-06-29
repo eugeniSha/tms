@@ -2,3 +2,5 @@ haiku
  The frog and the cat
 croak and mew in fine duet
  All goes together
+ 'git init'
+ 'git rm -- cache' /// 

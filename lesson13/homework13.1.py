@@ -1,7 +1,7 @@
 import re
 
 
-def test_valid_phone_numbers(regex_compiled):
+def valid_phone_numbers(regex_compiled):
     valid = (
         "+375-29-7776655",
         "+37-29-7776655",
@@ -14,7 +14,7 @@ def test_valid_phone_numbers(regex_compiled):
         assert res.group() == n
 
 
-def test_invalid_phone_numbers(regex_compiled):
+def invalid_phone_numbers(regex_compiled):
     invalid = (
         "",
         "test12345test"
@@ -39,5 +39,5 @@ def test_invalid_phone_numbers(regex_compiled):
 
 regex_phone = r'\+[0-9]{1,3}-[0-9]{2}-[0-9]{5,7}'
 regex_compiled = re.compile(regex_phone)
-test_invalid_phone_numbers(regex_compiled)
-test_valid_phone_numbers(regex_compiled)
+invalid_phone_numbers(regex_compiled)
+valid_phone_numbers(regex_compiled)
